@@ -1,8 +1,7 @@
 /* single-column styling */
 
 .column {
-    width: 100%;
-    max-width: 35em;
+    width: 75%;
 
     min-height: 100%;
 
@@ -194,6 +193,9 @@ body {
     font-size: 21px;
     color: #ddd;
 }
+
+figure { padding: 20px;}
+figure img {width: inherit;}
 
 /* Gist styling */
 .gist .gist-file .gist-data,
