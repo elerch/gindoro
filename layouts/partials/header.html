@@ -1,4 +1,15 @@
 <header class="header">
     <a href="/" class="title">{{ .Site.Title }}</a>
     {{ if isset .Site.Params "Description" }}<p>{{ .Site.Params.Description }}</p>{{end}}
+    <div class="social">
+    {{ if isset .Site.Params "GitHubUser" }}
+        <span><a href="https://github.com/{{ .Site.Params.GitHubUser}}">GitHub</a></span>
+    {{end}}
+    {{ if isset .Site.Params "TwitterUser" }}
+        <span><a href="https://twitter.com/{{ .Site.Params.TwitterUser}}">Twitter</a></span>
+    {{end}}
+    {{ if isset .Site.Params "LinkedInUser" }}
+        <span><a href="https://www.linkedin.com/in/{{ .Site.Params.LinkedInUser}}">LinkedIn</a></span>
+    {{end}}
+    </div>
 </header>

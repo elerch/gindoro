@@ -23,6 +23,8 @@ header.header {
     width: 100%;
     margin-bottom: 20px;
 }
+header.header a { color: #ddd;}
+header .social {padding-top: 5px; font-size: 14px;}
 
 .title {
     font-family: Lato, Verdana, Helvetica, Arial, sans-serif;;
