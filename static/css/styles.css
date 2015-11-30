@@ -60,9 +60,9 @@ header.header {
 
 /* general paragraph styling */
 
-p {
-    margin-top: 10px;
-    margin-bottom: 10px;
+p, ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* image styling */
