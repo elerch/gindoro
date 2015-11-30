@@ -6,7 +6,11 @@
         {{ partial "meta.html" . }}
 
         <base href="{{ .Site.BaseURL }}">
+        {{ if .Title }}
+        <title>{{ .Site.Title }}: {{ .Title }}</title>
+        {{ else }}
         <title>{{ .Site.Title }}</title>
+        {{ end }}
         <link rel="canonical" href="{{ .Permalink }}">
         {{ if .RSSLink }}
         <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"/>
