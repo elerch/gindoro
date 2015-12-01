@@ -1,6 +1,6 @@
 /* single-column styling */
 
-.column {
+.container {
     width: 75%;
 
     min-height: 100%;
