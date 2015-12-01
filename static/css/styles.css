@@ -1,5 +1,8 @@
-/* single-column styling */
-
+/* multi-column styling */
+/* 38em = */
+@media only screen  and (max-width : 38rem) {
+/* Styles */
+}
 .container {
     width: 75%;
 
@@ -24,11 +27,11 @@ header.header {
     margin-bottom: 20px;
 }
 header.header a { color: #ddd;}
-header .social {float: left; padding-top: 5px; font-size: 14px;}
-header .syndication {float: right; font-size: 14px;}
+header .social {float: left; padding-top: 5px; font-size: 0.67rem;}
+header .syndication {float: right; font-size: 0.67rem;}
 .title {
     font-family: Lato, Verdana, Helvetica, Arial, sans-serif;;
-    font-size: 35px;
+    font-size: 1.67rem;
 }
 
 /* post styling */
@@ -50,11 +53,11 @@ header .syndication {float: right; font-size: 14px;}
 }
 
 .post-title {
-    font-size: 28px;
+    font-size: 1.33rem;
 }
 
 .post-meta {
-    font-size: 14px;
+    font-size: 0.67rem;
 }
 
 /*/ Markdown Styling Below /*/
@@ -165,7 +168,7 @@ footer.bottom-footer {
     width: 100%;
     border-top: 1px solid #333333;
 
-    font-size: 10px;
+    font-size: 0.5rem;
 }
 
 /* code block styling */
@@ -189,10 +192,10 @@ pre {
 html{
     height: 100%;
     background-color: #333333;
+    font-size: 21px; /* rem based off this number */
 }
 body {
     min-height: 100%;
-    font-size: 21px;
     color: #ddd;
 }
 
