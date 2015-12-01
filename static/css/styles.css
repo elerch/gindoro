@@ -58,12 +58,15 @@ header .syndication {float: right; }
     /* wider screen - go multi-column */
     html {background-color: #444;}
     .container { display: block;  width:100%; padding: 0; }
-    .header { width: 10rem; position:fixed; right:1rem; left:0rem; bottom:10%;display:block;height:auto;/* background-color: #333333 */}
+    header.header { position:fixed; width: 10rem; top: 0; left:0; right: 0;bottom:0;
+              display:block; background-color: #333333; margin: 0; }
+    .header-container {position:absolute; width: 9rem; bottom: 10%;}
     header .social {float:none;}
-    header .social span {display:block; margin-bottom: 0.5rem;}
+    header .social span {display:inline-block; margin-bottom: 0.5rem; width:100%;}
     header .syndication { float: none; margin-top: 1rem; font-size: 0.67rem;}
+    header .title {display:inline-block; width:9rem;}
     header.header > * {padding-left:1rem;}
-    section#main, .bottom-footer {margin-left: 10rem; }
+    section#main, .bottom-footer {margin-left: 10rem; padding-left: 0.5rem; }
     footer.bottom-footer {width:auto;}
 }
 
