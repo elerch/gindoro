@@ -12,11 +12,8 @@ body {
     color: #ddd;
 }
 
-/* multi-column styling */
-/* 38em = */
-@media only screen  and (max-width : 38rem) {
+/* single-column styling */
 /* Styles */
-}
 .container {
     width: 75%;
 
@@ -40,9 +37,37 @@ header.header {
     width: 100%;
     margin-bottom: 20px;
 }
+
+/* footer styling */
+
+footer.bottom-footer {
+    margin-top: 15px;
+    padding-top: 0px;
+
+    width: 100%;
+    border-top: 1px solid #333333;
+
+    font-size: 0.5rem;
+}
+
+header .link-container {font-size: 0.8rem; padding-top: 0.5rem; padding-bottom:0.5rem;}
+header .social {float: left; }
+header .syndication {float: right; }
+
+@media only screen  and (min-width : 38rem) {
+    /* wider screen - go multi-column */
+    html {background-color: #444;}
+    .container { display: block;  width:100%; padding: 0; }
+    .header { width: 10rem; position:fixed; right:1rem; left:0rem; bottom:10%;display:block;height:auto;/* background-color: #333333 */}
+    header .social {float:none;}
+    header .social span {display:block; margin-bottom: 0.5rem;}
+    header .syndication { float: none; margin-top: 1rem; font-size: 0.67rem;}
+    header.header > * {padding-left:1rem;}
+    section#main, .bottom-footer {margin-left: 10rem; }
+    footer.bottom-footer {width:auto;}
+}
+
 header.header a { color: #ddd;}
-header .social {float: left; padding-top: 5px; font-size: 0.67rem;}
-header .syndication {float: right; font-size: 0.67rem;}
 .title {
     font-family: Lato, Verdana, Helvetica, Arial, sans-serif;;
     font-size: 1.67rem;
@@ -82,7 +107,7 @@ p, ul {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+p.post-title { margin: 0; padding-top: 20px;}
 /* image styling */
 
 img {
@@ -173,18 +198,6 @@ tbody tr:last-child td {
     border: none;
 }
 
-/* footer styling */
-
-footer.bottom-footer {
-    margin-top: 15px;
-    padding-top: 0px;
-
-    width: 100%;
-    border-top: 1px solid #333333;
-
-    font-size: 0.5rem;
-}
-
 /* code block styling */
 
 pre {
@@ -200,7 +213,7 @@ pre {
 }
 
 figure { padding: 20px;}
-figure img {width: inherit;}
+figure img {width: inherit; max-width: 100%;}
 
 /* Gist styling */
 .gist .gist-file .gist-data,
