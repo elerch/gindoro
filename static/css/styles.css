@@ -1,3 +1,17 @@
+/* general background styling */
+
+* { padding: 0; margin: 0; }
+
+html{
+    height: 100%;
+    background-color: #333333;
+    font-size: 21px; /* rem based off this number */
+}
+body {
+    min-height: 100%;
+    color: #ddd;
+}
+
 /* multi-column styling */
 /* 38em = */
 @media only screen  and (max-width : 38rem) {
@@ -183,20 +197,6 @@ pre {
     margin-top: 10px;
     margin-bottom: 10px;
     overflow-x: scroll;
-}
-
-/* general background styling */
-
-* { padding: 0; margin: 0; }
-
-html{
-    height: 100%;
-    background-color: #333333;
-    font-size: 21px; /* rem based off this number */
-}
-body {
-    min-height: 100%;
-    color: #ddd;
 }
 
 figure { padding: 20px;}
