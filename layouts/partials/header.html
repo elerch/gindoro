@@ -1,7 +1,7 @@
 <header class="header">
     <div class="header-container">
         <a href="/" class="title">{{ .Site.Title }}</a>
-        {{ if isset .Site.Params "Description" }}<p>{{ .Site.Params.Description }}</p>{{end}}
+        {{ if isset .Site.Params "Description" }}<p class="description">{{ .Site.Params.Description }}</p>{{end}}
         <div class="link-container">
             <div class="social">
             {{ if isset .Site.Params "GitHubUser" }}

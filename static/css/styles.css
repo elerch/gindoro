@@ -53,7 +53,7 @@ footer.bottom-footer {
 header .link-container {font-size: 0.8rem; padding-top: 0.5rem; padding-bottom:0.5rem;}
 header .social {float: left; }
 header .syndication {float: right; }
-
+header .description {opacity: 0.6}
 @media only screen  and (min-width : 38rem) {
     /* wider screen - go multi-column */
     html {background-color: #444;}
