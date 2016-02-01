@@ -9,6 +9,7 @@
     <article itemprop="articleBody" id="content">
        {{ .Content }}
     </article>
+    {{ partial "disqus.html" . }}
 </section>
 
 {{ partial "footer.html" . }}
