@@ -60,7 +60,6 @@ a {overflow-wrap: break-word;}
 
 @media only screen  and (min-width : 100rem) {
     /* wider screen - go multi-column */
-    html {background-color: #444;}
     .container { display: block;  width:100%; padding: 0; }
     header.header { position:fixed; width: 10rem; top: 0; left:0; right: 0;bottom:0;
               display:block; background-color: #333333; margin: 0; }
