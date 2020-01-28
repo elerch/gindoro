@@ -58,7 +58,7 @@ header .syndication {float: right; }
 header .description {opacity: 0.6}
 a {overflow-wrap: break-word;}
 
-@media only screen  and (min-width : 38rem) {
+@media only screen  and (min-width : 100rem) {
     /* wider screen - go multi-column */
     html {background-color: #444;}
     .container { display: block;  width:100%; padding: 0; }
