@@ -146,7 +146,7 @@ ul {
 
 ol {
     margin-left: 20px;
-    list-style-type: hiragana;
+    list-style-type: decimal;
 }
 
 /* blockquote styling */
