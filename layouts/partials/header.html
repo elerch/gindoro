@@ -1,17 +1,20 @@
 <header class="header">
     <div class="header-container">
         <a href="/" class="title">{{ .Site.Title }}</a>
-        {{ if isset .Site.Params "Description" }}<p class="description">{{ .Site.Params.Description }}</p>{{end}}
+        {{ if isset .Site.Params "description" }}<p class="description">{{ .Site.Params.Description }}</p>{{end}}
         <div class="link-container">
             <div class="social">
-            {{ if isset .Site.Params "GitHubUser" }}
+            {{ if isset .Site.Params "githubuser" }}
                 <span><a href="https://github.com/{{ .Site.Params.GitHubUser}}">GitHub</a></span>
             {{end}}
-            {{ if isset .Site.Params "TwitterUser" }}
+            {{ if isset .Site.Params "twitteruser" }}
                 <span><a href="https://twitter.com/{{ .Site.Params.TwitterUser}}">Twitter</a></span>
             {{end}}
-            {{ if isset .Site.Params "LinkedInUser" }}
+            {{ if isset .Site.Params "linkedinuser" }}
                 <span><a href="https://www.linkedin.com/in/{{ .Site.Params.LinkedInUser}}">LinkedIn</a></span>
+            {{end}}
+            {{ if isset .Site.Params "mastodonuser" }}
+            <span><a rel="me" href="https://{{ .Site.Params.MastodonInstance }}/{{ .Site.Params.MastodonUser }}">Mastodon</a></span>
             {{end}}
             </div>
             <div class="syndication"><a href="{{ .Site.RSSLink }}">RSS</a></div>
