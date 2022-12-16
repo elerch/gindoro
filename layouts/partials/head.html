@@ -11,10 +11,10 @@
         <title>{{ .Site.Title }}</title>
         {{ end }}
         <link rel="canonical" href="{{ .Permalink }}">
-        {{ if .RSSLink }}
-        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"/>
-        {{ else if .Site.RSSLink }}
-        <link href="{{ .Site.RSSLink }}" rel="home" type="application/rss+xml" title="{{ .Site.Title }}"/>
+        {{ $foo := .Site.Title }}
+        {{ with .OutputFormats.Get "RSS" }}
+          <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $foo }}" />
+          <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $foo }}" />
         {{ end }}
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
