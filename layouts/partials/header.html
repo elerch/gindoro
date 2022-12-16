@@ -18,6 +18,12 @@
             {{end}}
             </div>
             <div class="syndication"><a href="{{ .Site.RSSLink }}">RSS</a></div>
+            {{ with .OutputFormats.Get "rss" -}}
+              <div class="sindication">
+                {{ printf `<a href="%s">` .Permalink | safeHTML }}RSS</a>
+              </div>
+            {{ end -}}
+
         </div>
     </div>
 </header>
