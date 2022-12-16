@@ -17,9 +17,8 @@
             <span><a rel="me" href="https://{{ .Site.Params.MastodonInstance }}/{{ .Site.Params.MastodonUser }}">Mastodon</a></span>
             {{end}}
             </div>
-            <div class="syndication"><a href="{{ .Site.RSSLink }}">RSS</a></div>
             {{ with .OutputFormats.Get "rss" -}}
-              <div class="sindication">
+              <div class="syndication">
                 {{ printf `<a href="%s">` .Permalink | safeHTML }}RSS</a>
               </div>
             {{ end -}}
