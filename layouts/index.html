@@ -4,7 +4,7 @@
 
 <section id="main">
     <div>
-        {{ range .Site.Pages }}
+        {{ range where .Site.RegularPages "Section" "posts" }}
             {{ .Render "summary" }}
         {{ end }}
     </div>
