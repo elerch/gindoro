@@ -7,7 +7,9 @@ html{
     background-color: #222;
     font-size: 1rem;
 }
-h2{ 1.25rem; }
+/* Need the :is(..) stuff as both chrome and FF have those rules and will override otherwise */
+h1, :is(article, aside, nav, section) h1{ font-size: 1.5rem }
+h2, :is(article, aside, nav, section) h2{ font-size: 1.25rem; }
 
 body {
     min-height: 100%;
