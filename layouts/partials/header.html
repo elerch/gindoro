@@ -16,6 +16,12 @@
             {{ if isset .Site.Params "mastodonuser" }}
             <span><a rel="me" href="https://{{ .Site.Params.MastodonInstance }}/{{ .Site.Params.MastodonUser }}">Mastodon</a></span>
             {{end}}
+            {{ if isset .Site.Params "openpgpuser" }}
+            {{ if isset .Site.Params "openpgpkey" }}
+            <span><a rel="publickey" title="{{ .Site.Params.openpgpuser }}" href="{{ .Site.Params.OpenPgpKey }}">PGP</a>{{ if isset .Site.Params "openpgpfingerprintqr" }}<a href="{{ .Site.Params.openpgpfingerprintqr}}">(qr)</a>{{end}}
+            </span>
+            {{end}}
+            {{end}}
             </div>
             <div class="syndication"><a href="{{ .Site.RSSLink }}">RSS</a></div>
         </div>
